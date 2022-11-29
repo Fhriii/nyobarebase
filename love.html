@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .heart{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            display: flex;
+            margin: 300px auto;
+            transform: rotate(45deg);
+            animation:kotak 1s ease infinite  alternate-reverse;
+        }
+        
+        .heart::before{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            display: flex;
+            
+            content: " ";
+            bottom: 150px;
+           
+            border-radius: 50%;
+
+        }
+        .heart::after{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            display: flex;
+            
+            content: " ";
+            /* bottom: 15px; */
+            right: 160px;
+           
+            border-radius: 50%;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="heart"></div>
+
+</body>
+</html>
